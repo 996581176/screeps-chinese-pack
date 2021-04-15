@@ -33,6 +33,7 @@ jobs:
     - name: Deploy
       env:
         TARGET_REPO_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
+        TARGET_GITEE_REPO_TOKEN: ${{ secrets.TARGET_GITEE_REPO_TOKEN }}
       run: |
         cd dist
         # 初始化 git
@@ -43,3 +44,4 @@ jobs:
         git add .
         git commit -m "UPDATE BY GITHUB ACTION"
         git push --quiet --force https://$TARGET_REPO_TOKEN@github.com/screeps-cn/screeps-chinese-pack-release.git master
+        git push --quiet --force https://hopgoldy:$TARGET_GITEE_REPO_TOKEN@gitee.com/screeps-cn/screeps-chinese-pack-release.git master
