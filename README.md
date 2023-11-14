@@ -1,4 +1,3 @@
-原仓库：https://github.com/screeps-cn/docs，自用改造成parcel打包的。
 # Screeps-chinese-pack
 
 ![build badge](https://github.com/screeps-cn/screeps-chinese-pack/workflows/BUILD/badge.svg)
