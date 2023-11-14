@@ -1,4 +1,4 @@
-import { trim } from 'utils'
+import { trim } from '../../utils'
 
 /**
  * 翻译 Objective 元素

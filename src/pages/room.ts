@@ -1,4 +1,4 @@
-import { dontTranslate, translateMultiple } from 'utils'
+import { dontTranslate, translateMultiple } from '../utils'
 import getTips from './tips'
 
 const CONSTRUCT_NOTICE: MultipleMap = {

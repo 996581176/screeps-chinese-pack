@@ -1,49 +1,16 @@
 {
   "name": "screeps-chinese-pack",
   "version": "1.0.0",
-  "description": "用于汉化 screeps.com 网站的油猴脚本",
-  "main": "index.js",
-  "scripts": {
-    "start": "rollup -cw",
-    "lint": "eslint \"src/**\"",
-    "build": "rollup -c",
-    "test": "jest",
-    "test-c": "jest --coverage",
-    "coveralls": "coveralls < coverage/lcov.info"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HoPGoldy/screeps-chinese-pack.git"
-  },
-  "keywords": [
-    "screeps",
-    "chinese"
-  ],
-  "author": "hopgoldy",
+  "source": "src/main.ts",
+  "main": "dist/screeps-chinese-pack.user.js",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/HoPGoldy/screeps-chinese-pack/issues"
+  "scripts": {
+    "start": "parcel --no-source-maps",
+    "build": "rimraf ./.parcel-cache && parcel build --no-source-maps",
+    "watch": "parcel watch --no-source-maps"
   },
-  "homepage": "https://github.com/HoPGoldy/screeps-chinese-pack#readme",
-  "eslintIgnore": [
-    "dist/**"
-  ],
   "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.11.10",
-    "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
-    "coveralls": "^3.1.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.12.1",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "jest": "^26.6.3",
-    "rollup": "^2.32.0",
-    "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-typescript2": "^0.28.0",
-    "ts-jest": "^26.5.2",
-    "typescript": "^4.0.3"
+    "parcel": "^2.10.2",
+    "rimraf": "^5.0.5"
   }
 }

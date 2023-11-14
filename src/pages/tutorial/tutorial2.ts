@@ -1,5 +1,5 @@
-import { DOCUMENT_CN } from 'setting'
-import { translateMultiple } from 'utils'
+import { DOCUMENT_CN } from '../../setting'
+import { translateMultiple } from '../../utils'
 import { getBaseUIContent, getObjectiveTranslationContent } from './utils'
 
 /**

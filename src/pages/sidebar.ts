@@ -1,4 +1,4 @@
-import { dontTranslate } from 'utils'
+import { dontTranslate } from '../utils'
 
 const content: PageContent = {
     hashs: ['#!/'],

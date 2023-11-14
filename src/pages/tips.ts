@@ -1,4 +1,4 @@
-import { translateMultiple } from 'utils'
+import { translateMultiple } from '../utils'
 
 const TIP_CONTENT = {
     'Inscreasing the <code>reusePath</code> option in the <code>Creep.moveTo</code> method helps saving CPU.':
