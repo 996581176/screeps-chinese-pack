@@ -10,7 +10,10 @@
     "watch": "parcel watch --no-source-maps"
   },
   "devDependencies": {
+    "@parcel/transformer-typescript-tsc": "^2.10.2",
+    "@types/node": "^20.9.0",
     "parcel": "^2.10.2",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "typescript": ">=3.0.0"
   }
 }
