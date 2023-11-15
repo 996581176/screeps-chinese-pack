@@ -35,6 +35,22 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var plugin_1 = require("@parcel/plugin");
 exports.default = new plugin_1.Optimizer({
@@ -44,10 +60,10 @@ exports.default = new plugin_1.Optimizer({
             var contents;
             return __generator(this, function (_b) {
                 switch (_b.label) {
-                    case 0: return [4 /*yield*/, config.getConfig(["meta.json"])];
+                    case 0: return [4, config.getConfig(["meta.json"])];
                     case 1:
                         contents = ((_b.sent()) || {}).contents;
-                        return [2 /*return*/, contents];
+                        return [2, contents];
                 }
             });
         });
@@ -61,7 +77,7 @@ exports.default = new plugin_1.Optimizer({
                     strArr_1 = [];
                     strArr_1.push("// ==UserScript==");
                     Object.entries(config).forEach(function (_a) {
-                        var key = _a[0], value = _a[1];
+                        var _b = __read(_a, 2), key = _b[0], value = _b[1];
                         if (Array.isArray(value)) {
                             value.forEach(function (item) {
                                 strArr_1.push("// ".concat(key).concat(generateSpace(14 - key.length)).concat(item));
@@ -74,7 +90,7 @@ exports.default = new plugin_1.Optimizer({
                     strArr_1.push("// ==/UserScript==\n");
                     contents = strArr_1.join("\n") + contents;
                 }
-                return [2 /*return*/, {
+                return [2, {
                         contents: contents,
                         map: map,
                     }];
@@ -82,7 +98,6 @@ exports.default = new plugin_1.Optimizer({
         });
     },
 });
-/** 生成空格 */
 function generateSpace(length) {
     var str = "";
     for (var index = 0; index < length; index++) {

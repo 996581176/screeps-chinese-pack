@@ -7,7 +7,8 @@
   "scripts": {
     "start": "parcel --no-source-maps",
     "build": "rimraf ./.parcel-cache && parcel build --no-source-maps",
-    "watch": "parcel watch --no-source-maps"
+    "watch": "parcel watch --no-source-maps",
+    "buildPlugin": "tsc --project ./plugin/src/tsconfig.json"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-tsc": "^2.10.2",
