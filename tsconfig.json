@@ -37,5 +37,5 @@
     // "typeRoots": ["./my-types"]
   },
   // 入口文件
-  "include": ["src/*"]
+  // "include": ["src/*"]
 }
