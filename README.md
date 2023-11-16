@@ -17,6 +17,14 @@ Click [here](./README.en-US.md) to read the English readme.
 - yarn `latest`
 - tampermonkey `latest` (*浏览器中* )
 
+## Steam版本如何使用本地汉化包
+
+在screeps安装目录中找到`package.nw`文件，使用压缩软件打开（注意：不要解压）找到`index.html`文件，将以下代码添加到文件最后`script`标签的下面，其中`src`属性中填写汉化包所在路径，前缀加上`file://`。
+
+```html
+<script type="text/javascript" src="file://F:/Code/screeps-chinese-pack/dist/screeps-chinese-pack.user.js" async defer></script>
+```
+
 # 使用
 
 ## 安装依赖
