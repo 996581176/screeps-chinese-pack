@@ -45,6 +45,12 @@ const content: PageContent = {
       },
       reuse: true,
     },
+    {
+      "en-US":
+        "The Controller in this room is already captured by another player. It seems that somebody has come here ahead of you. Please choose another room.",
+      "zh-CN": "该房间的控制器已被另一位玩家占领。看起来有人比你先到了这里。请选择另一个房间。",
+      reuse: true,
+    },
 
     // 下方 Script 面板
     { "en-US": "Script", "zh-CN": "脚本" },
@@ -375,6 +381,22 @@ const content: PageContent = {
       "zh-CN": "相同名称的旗帜已存在，继续创建将覆盖原旗帜！",
       reuse: true,
     },
+    { "en-US": "Rampart", "zh-CN": "城墙", reuse: true },
+    { "en-US": "Tower", "zh-CN": "防御塔", reuse: true },
+    { "en-US": "Terminal", "zh-CN": "终端", reuse: true },
+    { "en-US": "Store", "zh-CN": "仓库", reuse: true },
+    { "en-US": "Storage", "zh-CN": "仓储", reuse: true },
+    { "en-US": "Empty", "zh-CN": "空", reuse: true },
+    { "en-US": "rampart", "zh-CN": "城墙", reuse: true },
+    { "en-US": "road", "zh-CN": "道路", reuse: true },
+    { "en-US": "Road", "zh-CN": "道路", reuse: true },
+    { "en-US": "resource", "zh-CN": "资源", reuse: true },
+    { "en-US": "mineral", "zh-CN": "矿物", reuse: true },
+    { "en-US": "Mineral", "zh-CN": "矿物", reuse: true },
+    { "en-US": "extractor", "zh-CN": "抽取器", reuse: true },
+    { "en-US": "Extractor", "zh-CN": "抽取器", reuse: true },
+    { "en-US": "Source", "zh-CN": "资源点", reuse: true },
+    { "en-US": "Constructed Wall", "zh-CN": "建筑墙壁", reuse: true },
 
     ...getTips(),
   ],
